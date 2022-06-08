@@ -63,5 +63,10 @@ mirrors, add these lines to your local.conf file in the Build directory:
  file://.* http://sstate.yoctoproject.org/2.7/PATH;downloadfilename=PATH \n \ 
  "
  
- 
- 
+git branch
+$ cd ~/poky
+$ source oe-init-build-env
+#After the script runs, your current working directory is set to the Build Directory. Later, when the build completes, the Build Directory contains all the files created during the build.
+
+$ bitbake core-image-sato
+$ runqemu qemux86
